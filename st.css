@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:#4285f4 ; 
+}
+.cont{
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+}
+.cont h2{
+    font-weight: 600;
+    font-size: 1.31rem;
+    padding: 1rem 1.175rem;
+    border-bottom: 1px solid #d4dbe5;
+}
+
+.wra{ 
+    margin: 1.25rem 1.75rem;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 53px;
+    color: #000;
+    background: none;
+    letter-spacing: 1.4px;
+    font-size: 1.06rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 2.85rem 0 1rem;
+}
+.input-box span{
+position: absolute;
+right: 13px;
+cursor: pointer;
+line-height: 53px;
+color: #707070;
+}
+.wra .pass-in{
+    width: 100%;
+    height: 4px; 
+    position: relative;
+    background: #dfdfdf;
+    margin-top: 0.75rem;
+    border-radius:25px ;
+   
+}
+.pass-in::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+}
+.pass-in#weak::before{
+    width: 20%;
+    background: #e64a4a;
+}
+.pass-in#medium::before{
+    width: 50%;
+    background: #f1c80b;
+}
+.pass-in#strong::before{
+    width: 100%;
+    background: #4285f4;
+}
+.wra .pass-len{
+     margin: 1.56rem 0 1.25rem ;
+}
+.pass-len .details{
+    display: flex;
+    justify-content: space-between;
+}
+.pass-len input{
+    width: 100%;
+    height: 5px;
+}
+.wra .pass-set .options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 1rem; 
+}
+.pass-set .options .options{
+   display: flex;
+   margin-bottom: 1rem;
+   width: calc(100% / 2);  /*ba 100 bgre bas bo har itemak 50*/
+}
+.options .options:first-child{
+    pointer-events: none;
+}
+.options .options:first-child input{
+   opacity: 0.7;
+}
+.options .options input{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+.options .options label{
+    cursor: pointer;
+    padding-left: 0.63rem;
+}
+.wra .gene-btn{
+    width: 100%;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #4285f4;
+    font-size: 1.06rem;
+    margin: 0.94rem 0 1.3rem;
+    padding: 0.94rem 0;
+}
+
+
+
+
